@@ -1,7 +1,7 @@
 # RestAssuredSerenityCucumber Framework
 
-This is a sample Rest API test solution for sample endpoints available in https://restful-booker.herokuapp.com/apidoc/index.html The published APIs represent a booking system where user can create, update and cancel bookings.
-
+This is Maven project setup on serenity restassured dependencies
+Feature File Pet.feature contains Worklow of Get, create, update and delete a pet according to query parameters and path parameters for delete operation.
 Tests are written using a combination of SerenityBDD, RestAssured, Cucumber, Junit & Maven.
 
 ## Technology Stack
@@ -18,9 +18,9 @@ Tests are written using a combination of SerenityBDD, RestAssured, Cucumber, Jun
 
 ## Application Under Test
 
-We are using Restful-Booker APIs as the Application Under Test.
+We are using Petstore APIs as the Application Under Test.
 
-* URL : https://restful-booker.herokuapp.com/
+* URL :https://petstore.swagger.io/v2/pet
 
 ## The project directory structure
 The project follows the standard directory structure used in most Serenity projects:
@@ -29,15 +29,27 @@ The project follows the standard directory structure used in most Serenity proje
 src
   + main
     + java                          
-      + env                         methods to get/set env related configs
-      + models                      pojos of all endpoints
-      + utilities                   utility methods and constants
+      + models                      All Objects of all endpoints
+          .Pet
+             .Pet.java
+             .Pets.java
+             .Tag.java
+           .json                  data need to create Post and Put Json Object
+      + utilities                 Methods needed for handling Json File, extracting Endpoint from Properties file and Error static Message
+          .applicationProperties.java
+           .ErrorMessage.java
   + test
-    + java                          
-      + endpoints                   endpoints of the services
-      + runners                     test runner(senerity runner/trigger configurations)
-      + stepdefinitions             Step definitions for the BDD feature
-      + utils                       Common utility methods
+    + java  
+      .adidas
+         .commun
+      .api
+         .adidas
+            .endpoints                   endpoints of the services
+       .features.steps            Package of stepdefinition (should be specified bu @Glue option on CucumberRunner )
+       .features.steps.serenity    Steps serenity we can consider them as controler , steps can be shared... 
+       .runners                     test runner(senerity runner/trigger configurations)
+              
+     
     + resources
       + features                  Feature files
       + properties                AUT properties files
