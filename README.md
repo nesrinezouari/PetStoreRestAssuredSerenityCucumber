@@ -34,8 +34,8 @@ src
              .Pet.java
              .Pets.java
              .Tag.java
-           .json                  data need to create Post and Put Json Object
-      + utilities                 Methods needed for handling Json File, extracting Endpoint from Properties file and Error static Message
+           .json                 data need to create Post and Put Json Object
+      + utilities                Methods needed for handling Files and Messages
           .applicationProperties.java
            .ErrorMessage.java
   + test
@@ -62,7 +62,7 @@ Following instructions will help you running the project. First, clone this proj
 Open the project in any IDE Eclipse/IntelliJ. Run the following command in Terminal and build the project. It will automatically download all the required dependencies.
 
 ```sh
-$ mvn clean install
+$ mvn clean verify
 ```
 
 ### Execute Tests
@@ -83,15 +83,4 @@ You can find the Serenity reports in the following directory of the Project.
 
 In the serenity directory, open 'index.html' file to view the report.
 
-If we make any push/pull/any change to code, will automatically trigger the builds in both circleci and gitlab, reports are shown here [https://4-338524524-gh.circle-artifacts.com/0/target/site/serenity/index.html] and some results screenshots are attached herewith as well
-
-![Alt text](https://github.com/cvenkatreddy/restassured-serenity-cucumber/blob/master/Screenshot%202021-02-13%20at%2016.26.28.png)
-![Alt text](https://github.com/cvenkatreddy/restassured-serenity-cucumber/blob/master/Screenshot%202021-02-13%20at%2016.28.35.png)
-
-### Finally Source code, Please refer
-
-* Github (https://github.com/cvenkatreddy/restassured-serenity-cucumber) with circleci integration(Config.yml)
-* GitLab (https://gitlab.com/cvenkatreddy/restassured-serenity-cucumber) with gitlab integration (.gitlab-ci.yml)
-
-![Alt text](https://github.com/cvenkatreddy/restassured-serenity-cucumber/blob/master/Screenshot%202021-02-13%20at%2016.25.22.png)
-![Alt text](https://github.com/cvenkatreddy/restassured-serenity-cucumber/blob/master/Screenshot%202021-02-13%20at%2016.37.20.png)
+I
