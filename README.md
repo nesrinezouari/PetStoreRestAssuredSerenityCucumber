@@ -1,4 +1,5 @@
-# RestAssuredSerenityCucumber Framework
+# PetStoreRestAssuredSerenityCucumber
+
 
 This is Maven project setup on serenity restassured dependencies
 Feature File Pet.feature contains Worklow of Get, create, update and delete a pet according to query parameters and path parameters for delete operation.
