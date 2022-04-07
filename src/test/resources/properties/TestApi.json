@@ -1,0 +1,17 @@
+{
+  "env1":[
+    {
+      "baseURL":"https://petstore.swagger.io/",
+      "endpointURL":"https://petstore.swagger.io/v2/"
+    }
+  ],
+  
+  "Preprod":[
+    {
+      "baseURL":"https://petstore.swagger.io/",
+      "endpointURL":"https://petstore.swagger.io/v2/"
+    }
+  ]
+
+  
+}
