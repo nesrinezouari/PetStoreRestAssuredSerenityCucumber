@@ -83,4 +83,15 @@ You can find the Serenity reports in the following directory of the Project.
 
 In the serenity directory, open 'index.html' file to view the report.
 
-I
+### How It Works
+Runner Start with Feture File , parse Steps and look for stepDefinition path on @Glue option of runner
+Every Stepdefinition call Steps that is layer to talk with Endpoint and checking Result 
+
+### How To Run Projet
+
+we set Maven Clean Verify Goal and project Run we found index.html under target/site folder
+we can run project as Junit Project Also by setting JunitRunnerTest Class to CucumberTestSuite
+
+### Next Step
+We can generate data even form file or from Random data by using com.github.javafaker dependency
+or we can Send them on Feture File which not recommanded for visibility purpose
